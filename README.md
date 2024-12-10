@@ -30,9 +30,8 @@
    ```bash
    git clone https://github.com/your_username/Hybrid-IDS.git](https://github.com/Arvindsai-lu/Hybrid-Intrusion-Detection-System-Using-Machine-Learning-.git
    cd Hybrid-Intrusion-Detection-System-Using-Machine-Learning
-
-   Install the required Python libraries:
-2. pip install -r requirements.txt
+2. Install the Required Libraries
+   command : pip install -r requirements.txt
    Run the scripts: Intrusion-Detection-System.ipynb
 
    if you have doubts read the file : How to run the script - IDS
