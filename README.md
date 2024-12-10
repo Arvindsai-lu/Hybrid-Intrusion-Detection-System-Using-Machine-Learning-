@@ -1,33 +1,32 @@
-Hybrid Intrusion Detection System (IDS)
-This repository contains the implementation and analysis of a Hybrid Intrusion Detection System (IDS) using machine learning algorithms and the CIC-IDS-2018 dataset. The project aims to detect and classify various network intrusion scenarios with high accuracy and adaptability.
+## 📚 Project: Hybrid Intrusion Detection System (IDS)
 
-Table of Contents
-Introduction
-Dataset
-Algorithms and Techniques
-Results Summary
-Installation
-Usage
-File Structure
-Contributions
-License
-Introduction
-This project focuses on developing a Hybrid IDS by leveraging Network-based IDS (NIDS) and Host-based IDS (HIDS) to detect intrusions effectively. It combines advanced machine learning models, real-time data handling capabilities, and ensemble techniques to classify network activities as normal or malicious.
+### About the Project
+- 🔒 This repository contains the implementation of a **Hybrid Intrusion Detection System** using machine learning techniques.
+- 🕵️‍♂️ **Objective**: Detect and classify various network intrusion scenarios with high accuracy.
+- 📊 **Dataset**: Uses the **CIC-IDS-2018 dataset**, covering diverse attack scenarios like DoS, DDoS, SQL Injection, and Botnet.
 
-Dataset
-The project uses the CIC-IDS-2018 dataset, which includes diverse attack scenarios such as:
+### Features
+- 🚀 **Algorithms**:
+  - Random Forest 🌳
+  - XGBoost ⚡
+  - Decision Tree 🌴
+  - Gaussian Naive Bayes 📈
+  - Max Voting Ensemble 🗳️
+- 📈 **Techniques**:
+  - Synthetic Minority Oversampling Technique (**SMOTE**) to handle imbalanced data.
+  - Binary and Multi-class classification tasks with enhanced detection accuracy.
 
-Denial of Service (DoS)
-Distributed Denial of Service (DDoS)
-SQL Injection
-Botnet
-The dataset has been preprocessed, and techniques like Synthetic Minority Oversampling Technique (SMOTE) were applied to address class imbalances.
+### 📊 Results Overview
+| **Model**                 | **Accuracy (%)** | **F1-Score (%)** | **False Positive Rate (FPR)** |
+|---------------------------|------------------|------------------|--------------------------------|
+| Gaussian Naive Bayes      | 85.32           | 84.90           | 3.5%                          |
+| Decision Tree             | 39.94           | 40.00           | 15.0%                         |
+| XGBoost                   | 99.87           | 99.85           | 0.8%                          |
+| Random Forest             | 100.00          | 99.90           | 1.9%                          |
+| Max Voting Ensemble       | 95.08           | 94.80           | 2.1%                          |
 
-Algorithms and Techniques
-The following algorithms and techniques were implemented and evaluated:
-
-Gaussian Naive Bayes: A probabilistic model for baseline classification.
-Decision Tree: A simple and interpretable tree-based model.
-Random Forest: An ensemble method providing robustness and high accuracy.
-XGBoost: A gradient boosting framework optimized for performance.
-Max Voting Ensemble Technique: Combines predictions from multiple models for improved results.
+### Installation and Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your_username/Hybrid-IDS.git
+   cd Hybrid-IDS
